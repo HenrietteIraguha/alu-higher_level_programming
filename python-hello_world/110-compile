@@ -1,0 +1,7 @@
+#!/bin/bash
+import os
+PYFILE= os.environ.get('PYFILE')
+os.system(f"python3 -m compileall {PYFILE}")
+Compiled_file = f"{PYFILE[:-3].PYC}"
+print(f"compiling {PYFILE} .......")
+print(f"The compiled file is: {compiled_file}")

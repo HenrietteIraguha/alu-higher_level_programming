@@ -1,0 +1,8 @@
+#!/bin/bash
+print("Best School")
+
+export PYFILE=main.py
+./101-compile
+ls
+cat main.pyc | zgrep -c "Best School"
+od -t x1 main.pyc

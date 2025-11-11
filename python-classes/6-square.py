@@ -3,11 +3,11 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
-
+"""Initialize a new Square with optional size and position."""
     @property
     def size(self):
         return self.__size
-
+"""Retrieve the current size of the square."""
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -19,7 +19,7 @@ class Square:
     @property
     def position(self):
         return self.__position
-
+        """Retrieve the current position of the square."""
     @position.setter
     def position(self, value):
         if (
@@ -33,7 +33,7 @@ class Square:
 
     def area(self):
         return self.__size ** 2
-
+        """Print the square with the character # using position for spacing."""
     def my_print(self):
         if self.__size == 0:
             print()

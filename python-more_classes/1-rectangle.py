@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Reactangle module"""
 
 
 class Rectangle:
